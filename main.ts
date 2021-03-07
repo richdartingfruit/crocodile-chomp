@@ -1,12 +1,12 @@
 function openMouth () {
-    while (angle <= 145) {
+    while (angle <= 175) {
         angle += 5
         pins.servoWritePin(AnalogPin.P2, angle)
         basic.pause(500)
     }
 }
 function closeMouth () {
-    while (angle >= 115) {
+    while (angle >= 140) {
         angle += -5
         pins.servoWritePin(AnalogPin.P2, angle)
         basic.pause(500)
